@@ -101,7 +101,7 @@ if [ -z "$VCAP_REPO_BRANCH" ]; then
 fi
 
 # apt-get update
-run_cmd apt-get update
+# run_cmd apt-get update
 
 # Check if we have access to the web
 echo "Installing wget..."
