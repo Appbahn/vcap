@@ -117,7 +117,7 @@ if ! wget -q -T 2 -t 2 -O - http://api.run.pivotal.io/info | grep "Cloud Foundry
 fi
 
 # Install chef
-readonly PREREQUISITES=(ruby1.9.1 ruby1.9.1-dev libopenssl-ruby1.9.1 rdoc1.9.1 ri1.9.1 irb1.9.1 build-essential ssl-cert)
+readonly PREREQUISITES=(ruby ruby-dev libopenssl-ruby rdoc ri irb build-essential ssl-cert)
 echo "Installing prerequisites..."
 run_cmd apt-get $APT_CONFIG install -qym "${PREREQUISITES[@]}"
 
